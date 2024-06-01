@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Complementario01.Pruebauno"
+             Title="Pruebauno">
+    <StackLayout Padding="20">
+        <Label Text="Ingrese cuatro números:" FontSize="Large" HorizontalOptions="Center" />
+
+        <!-- Entries para que el usuario ingrese los números -->
+        <Entry x:Name="entry1" Placeholder="Número 1" />
+        <Entry x:Name="entry2" Placeholder="Número 2" />
+        <Entry x:Name="entry3" Placeholder="Número 3" />
+        <Entry x:Name="entry4" Placeholder="Número 4" />
+
+        <!-- Botón para invertir los números -->
+        <Button Text="Invertir números" Clicked="Button_Clicked" HorizontalOptions="Center" />
+
+        <!-- Label para mostrar los números invertidos -->
+        <Label x:Name="lblResultado" FontSize="Large" HorizontalOptions="Center" />
+
+        <Image Source="C:\Users\Alexis\Documents\Practica 09\Complementario01\Complementario01\4numeros.jpg" WidthRequest="500" HeightRequest="300" Aspect="AspectFit" />
+
+    </StackLayout>
+</ContentPage>
