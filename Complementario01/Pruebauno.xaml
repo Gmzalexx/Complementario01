@@ -6,18 +6,23 @@
     <StackLayout Padding="20">
         <Label Text="Ingrese cuatro números:" FontSize="Large" HorizontalOptions="Center" />
 
-        <!-- Entries para que el usuario ingrese los números -->
+        <!-- Agregamos entries para que cuando  ingrese los números funcionen de manera correcta  
+        podamos agregarlos de una vez declaramos los entry1 y entry2 para que estos funcionen en 
+        en xaml.cs-->
         <Entry x:Name="entry1" Placeholder="Número 1" />
         <Entry x:Name="entry2" Placeholder="Número 2" />
         <Entry x:Name="entry3" Placeholder="Número 3" />
         <Entry x:Name="entry4" Placeholder="Número 4" />
 
-        <!-- Botón para invertir los números -->
+        <!-- Agregamos un butón haciendo un evento en el prueba uno de xaml.cs ya 
+         para poder invertir los números y estos funcionen de manera rapida -->
         <Button Text="Invertir números" Clicked="Button_Clicked" HorizontalOptions="Center" />
 
-        <!-- Label para mostrar los números invertidos -->
+        <!-- Agregamos un label para mostrar los números invertidos este
+        se mostrara en la pantalla cuando nosotros invertamos los numeros -->
         <Label x:Name="lblResultado" FontSize="Large" HorizontalOptions="Center" />
 
+        <!-- Agregamos la etiqueta de imagen para que nuestra app tenga mas calidad y vista-->
         <Image Source="C:\Users\Alexis\Documents\Practica 09\Complementario01\Complementario01\4numeros.jpg" WidthRequest="500" HeightRequest="300" Aspect="AspectFit" />
 
     </StackLayout>
